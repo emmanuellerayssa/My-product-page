@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="productpage.css">
+    <script src="https://kit.fontawesome.com/1aaf00f280.js" crossorigin="anonymous"></script>
+
+    <title>product</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-truck fa-xl" style="color: rgb(255, 255, 255);"></i>
+            <span>SHOP SHOP</span>
+        </div>
+        <div class="header-options">
+            <div class="searchbar">
+                <i class="fa-solid fa-magnifying-glass" style="color:grey;"></i>
+                <input type="search" placeholder="Search products..." style="border: none; background-color: inherit;">
+                <i class="fa-solid fa-magnifying-glass" style="color: grey; margin-left:1.5rem;"></i>
+            </div>
+            <ul class="icons">
+                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <i class="fa-brands fa-opencart"></i>
+                    <span>3</span>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+    <div class="content">
+        <nav>
+            <ul>
+                <li><a href="#"> <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a href="#"> <i class="fa-solid fa-grip" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a href="#"> <i class="fa-solid fa-user" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a href="#"> <i class="fa-solid fa-envelope" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a href="#"> <i class="fa-solid fa-gear" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a href="#"> <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-rotate-left" style="color: rgb(255, 255, 255);"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="filters">
+            <span>Filters</span>
+            <div class="filter-cat">
+                <span>Categories</span>
+                <ul>
+                    <li><input type="checkbox"> Electronics</li>
+                    <li><input type="checkbox"> Fashion</li>
+                    <li><input type="checkbox"> Home</li>
+                    <li><input type="checkbox"> Beauty</li>
+                    <li><input type="checkbox"> Sports</li>
+                </ul>
+            </div>
+            <div class="filter-cat">
+                <span>Price Range</span>
+                <span class="prange">$ 10 - $ 500</span>
+                <input type="range" max="500" min="10" style="max-width: 110px;">
+            </div>
+            <div class="filter-cat">
+                <span>Sort by</span>
+                <select name="sortby" id="sortby">
+                    <option value="Popularity">Popularity</option>
+                    <option value="Star rating">Star rating</option>
+                    <option value="price">Price high to low</option>
+                    <option value="price2">Price low to high</option>
+                </select>
+            </div>
+            <button type="button">Apply</button>
+        </div>
+
+        <main>
+            <div class="title">Products</div>
+
+            <div class="container">
+                <div class="item">
+                    <img class="productimg" src="images/1.webp" alt="image">
+                    <span class="productname">Sportswear set</span>
+                    <span class="productprice">70$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <div class="tooltip">
+                        <span class="productinfo green">New</span>
+                    </div>
+                    <img class="productimg" src="images/2.jfif" alt="image">
+                    <span class="productname">Smart watch</span>
+                    <span class="productprice">120$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                     <div class="tooltip">
+                        <span class="productinfo red">-20%</span>
+                    </div>
+                    <img class="productimg" src="images/10.jfif" alt="image">
+                    <span class="productname">Backpack</span>
+                    <span class="productprice" style="color: green;"><span class="onsale">50$</span> 40$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img class="productimg" src="images/9.webp" alt="image">
+                    <span class="productname">Gaming mouse</span>
+                    <span class="productprice">59.99$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <div class="tooltip">
+                        <span class="productinfo yellow">Best Seller</span>
+                    </div>
+                    <img class="productimg" src="images/8.png" alt="image">
+                    <span class="productname">Beauty kit</span>
+                    <span class="productprice">60$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img class="productimg" src="images/7.webp" alt="image">
+                    <span class="productname">Mac Book</span>
+                    <span class="productprice">1200$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img class="productimg" src="images/5.webp" alt="image">
+                    <span class="productname">I phone 13 mini</span>
+                    <span class="productprice">750$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+
+                <div class="item">
+                    <img class="productimg" src="images/3.avif" alt="image">
+                    <span class="productname">Comfy Couch </span>
+                    <span class="productprice">325$</span>
+                    <button class="cartbutton">Add to Cart</button>
+                </div>
+            </div>
+
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a  href="#">1</a></li>
+                <li><a class="pactive" href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
